@@ -1,134 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WESTERN BLISS</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./home_imgs/title-logo.png"
+      type="image/x-icon"
+    />
+    <!-- custom-style-sheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fancy-box -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WESTERN BLISS</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./home_imgs/title-logo.png" type="image/x-icon" />
-  <!-- custom-style-sheet -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- fancy-box -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- animation-on-scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-181970454-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- animation-on-scroll -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181970454-7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-181970454-7");
+    </script>
+  </head>
 
-    gtag('config', 'UA-181970454-7');
-  </script>
-</head>
-
-<body data-spy="scroll" data-target=".navbar " data-offset="0">
-  <!-- plaza-banner -->
-  <section class="bliss-banner">
-    <div class="container">
-      <div class="inner-banner">
-        <div class="nav-bar">
-          <div class="nav-brand">
-            <a href="./index.html">
-              <img src="./home_imgs/Western construction White logo.png" alt="..." />
-            </a>
-          </div>
-          <div class="nav-content">
-            <div class="nav-links">
-              <a href="./index.html">Home</a><a href="./aboutus.html">About us</a>
-              <div class="d">
-                <button class="d-btn-newnav page-active">Residential</button>
-                <div class="d-content-new d-content-new1 ">
-                  <div class="d-content-new-inner">
-                    <div class="row menu-row">
-                      <div class="column">
-                        <h2>Residential Projects</h2>
-                        <!-- <div class="new-nav-tab">
+  <body data-spy="scroll" data-target=".navbar " data-offset="0">
+    <!-- plaza-banner -->
+    <section class="bliss-banner">
+      <div class="container">
+        <div class="inner-banner">
+          <div class="nav-bar">
+            <div class="nav-brand">
+              <a href="./">
+                <img
+                  src="./home_imgs/Western construction White logo.png"
+                  alt="..."
+                />
+              </a>
+            </div>
+            <div class="nav-content">
+              <div class="nav-links">
+                <a href="./">Home</a><a href="./aboutus">About us</a>
+                <div class="d">
+                  <button class="d-btn-newnav page-active">Residential</button>
+                  <div class="d-content-new d-content-new1">
+                    <div class="d-content-new-inner">
+                      <div class="row menu-row">
+                        <div class="column">
+                          <h2>Residential Projects</h2>
+                          <!-- <div class="new-nav-tab">
                         <button class="new-nav-tablinks" onclick="newnav(event, 'menu1')"
                           id="defaultOpen2">Residential</button>
                         <button class="new-nav-tablinks" onclick="newnav(event, 'menu2')">Commercial</button>
                       </div> -->
 
-                        <div id="menu1" class="new-nav-tabcontent">
-                          <div class="row mt-3">
-                            <div class="col-lg-2"><a href="./western-tapovan.html"><img class="img-fluid w-100"
-                                  src="./project menu images/tapovan.png" alt="..."></a>
-                              <a href="./western-tapovan.html">
-                                <p class="locname">Western Tapovan</p>
-                                <p class="loc">Near B.N. Reddy Nagar</p>
-                              </a>
-
-
+                          <div id="menu1" class="new-nav-tabcontent">
+                            <div class="row mt-3">
+                              <div class="col-lg-2">
+                                <a href="./western-tapovan"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/tapovan.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./western-tapovan">
+                                  <p class="locname">Western Tapovan</p>
+                                  <p class="loc">Near B.N. Reddy Nagar</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-2">
+                                <a href="./western-windsor-res-B"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/siteb.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./western-windsor-res-B">
+                                  <p class="locname">Western Windsor - B</p>
+                                  <p class="loc">Puppalaguda</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-2">
+                                <a href="./western-windsor-res"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/sitec.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./western-windsor-res">
+                                  <p class="locname">Western Windsor - C</p>
+                                  <p class="loc">Puppalaguda</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-2">
+                                <a href="./westernexortica"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/exotica.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westernexortica">
+                                  <p class="locname">Western Exotica</p>
+                                  <p class="loc">Kothaguda</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-2">
+                                <a href="./westernbliss"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/bliss.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westernbliss">
+                                  <p class="locname page-active">
+                                    Western Bliss
+                                  </p>
+                                  <p class="loc page-active">
+                                    Kapra, Secunderabad
+                                  </p>
+                                </a>
+                              </div>
+                              <div class="col-lg-2">
+                                <a href="./westernplaza"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/plaza.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westernplaza">
+                                  <p class="locname">Western Plaza</p>
+                                  <p class="loc">Shaikpet</p>
+                                </a>
+                              </div>
                             </div>
-                            <div class="col-lg-2"><a href="./western-windsor-res-B.html"><img class="img-fluid w-100"
-                                  src="./project menu images/siteb.png" alt="..."></a>
-                              <a href="./western-windsor-res-B.html">
-                                <p class="locname">Western Windsor - B</p>
-                                <p class="loc">Puppalaguda</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-2"><a href="./western-windsor-res.html"><img class="img-fluid w-100"
-                                  src="./project menu images/sitec.png" alt="..."></a>
-                              <a href="./western-windsor-res.html">
-                                <p class="locname">Western Windsor - C</p>
-                                <p class="loc">Puppalaguda</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-2"><a href="./westernexortica.html"><img class="img-fluid w-100"
-                                  src="./project menu images/exotica.png" alt="..."></a>
-                              <a href="./westernexortica.html">
-                                <p class="locname">Western Exotica</p>
-                                <p class="loc">Kothaguda</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-2"><a href="./westernbliss.html"><img class="img-fluid w-100"
-                                  src="./project menu images/bliss.png" alt="..."></a>
-                              <a href="./westernbliss.html">
-                                <p class="locname page-active">Western Bliss</p>
-                                <p class="loc page-active">Kapra, Secunderabad</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-2"><a href="./westernplaza.html"><img class="img-fluid w-100"
-                                  src="./project menu images/plaza.png" alt="..."></a>
-                              <a href="./westernplaza.html">
-                                <p class="locname">Western Plaza</p>
-                                <p class="loc">Shaikpet</p>
-                              </a>
-
-                            </div>
-
-
                           </div>
-                        </div>
 
-                        <!-- <div id="menu2" class="new-nav-tabcontent">
+                          <!-- <div id="menu2" class="new-nav-tabcontent">
                         <div class="row">
                           <div class="col-lg-2"><img class="img-fluid w-100" src="./project menu images/Group 1000.png"
                               alt="..."></div>
@@ -144,67 +196,81 @@
                               alt="..."></div>
                         </div>
                       </div> -->
-
-
-
+                        </div>
+                        <a href="./project" class="v-view mt-5 ml-3"
+                          >View all projects</a
+                        >
                       </div>
-                      <a href="./project.html" class="v-view mt-5 ml-3">View all
-                        projects</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="d">
-                <button class="d-btn-newnav">Commercial</button>
-                <div class="d-content-new d-content-new1 ">
-                  <div class="d-content-new-inner new-menu">
-                    <div class="row menu-row new-menu-row">
-                      <div class="column">
-                        <h2>Commercial Projects</h2>
-                        <!-- <div class="new-nav-tab">
+                <div class="d">
+                  <button class="d-btn-newnav">Commercial</button>
+                  <div class="d-content-new d-content-new1">
+                    <div class="d-content-new-inner new-menu">
+                      <div class="row menu-row new-menu-row">
+                        <div class="column">
+                          <h2>Commercial Projects</h2>
+                          <!-- <div class="new-nav-tab">
                       <button class="new-nav-tablinks" onclick="newnav(event, 'menu1')"
                         id="defaultOpen2">Residential</button>
                       <button class="new-nav-tablinks" onclick="newnav(event, 'menu2')">Commercial</button>
                     </div> -->
 
-                        <div id="menu1" class="new-nav-tabcontent">
-                          <div class="row mt-3">
-                            <div class="col-lg-3"><a href="./western-windsor-com.html"><img class="img-fluid w-100"
-                                  src="./project menu images/sitea.png" alt="..."></a>
-                              <a href="./western-windsor-com.html">
-                                <p class="locname">Western Windsor - A</p>
-                                <p class="loc">Puppalaguda</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-3"><a href="./westerndallas.html"><img class="img-fluid w-100"
-                                  src="./project menu images/dallas.png" alt="..."></a>
-                              <a href="./westerndallas.html">
-                                <p class="locname">Western Dallas Centre</p>
-                                <p class="loc">Raidurg</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-3"><a href="./westernaqua.html"><img class="img-fluid w-100"
-                                  src="./project menu images/aqua.png" alt="..."></a>
-                              <a href="./westernaqua.html">
-                                <p class="locname">Western Aqua</p>
-                                <p class="loc">Hitech City</p>
-                              </a>
-
-                            </div>
-                            <div class="col-lg-3"><a href="./westernpearl.html"><img class="img-fluid w-100"
-                                  src="./project menu images/pearl.png" alt="..."></a>
-                              <a href="./westernpearl.html">
-                                <p class="locname">Western Pearl</p>
-                                <p class="loc">Hitech City</p>
-                              </a>
-
+                          <div id="menu1" class="new-nav-tabcontent">
+                            <div class="row mt-3">
+                              <div class="col-lg-3">
+                                <a href="./western-windsor-com"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/sitea.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./western-windsor-com">
+                                  <p class="locname">Western Windsor - A</p>
+                                  <p class="loc">Puppalaguda</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-3">
+                                <a href="./westerndallas"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/dallas.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westerndallas">
+                                  <p class="locname">Western Dallas Centre</p>
+                                  <p class="loc">Raidurg</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-3">
+                                <a href="./westernaqua"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/aqua.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westernaqua">
+                                  <p class="locname">Western Aqua</p>
+                                  <p class="loc">Hitech City</p>
+                                </a>
+                              </div>
+                              <div class="col-lg-3">
+                                <a href="./westernpearl"
+                                  ><img
+                                    class="img-fluid w-100"
+                                    src="./project menu images/pearl.png"
+                                    alt="..."
+                                /></a>
+                                <a href="./westernpearl">
+                                  <p class="locname">Western Pearl</p>
+                                  <p class="loc">Hitech City</p>
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <!-- <div id="menu2" class="new-nav-tabcontent">
+                          <!-- <div id="menu2" class="new-nav-tabcontent">
                       <div class="row">
                         <div class="col-lg-2"><img class="img-fluid w-100" src="./project menu images/Group 1000.png"
                             alt="..."></div>
@@ -220,491 +286,678 @@
                             alt="..."></div>
                       </div>
                     </div> -->
-
-
-
+                        </div>
+                        <a
+                          href="./project"
+                          class="v-view ml-3"
+                          style="padding-top: 7%"
+                          >View all projects</a
+                        >
                       </div>
-                      <a href="./project.html" class="v-view ml-3" style="padding-top: 7%;">View all
-                        projects</a>
                     </div>
                   </div>
                 </div>
+                <a href="./careers">Careers</a>
+                <a href="./contact">Contact us</a>
               </div>
-              <a href="./careers.html">Careers</a>
-              <a href="./contact.html">Contact us</a>
-            </div>
-            <div class="nav-btn">
-              <a href="tel:+918886669505"><button>
-                  <img src="./home_imgs/843786_whatsapp_icon.png" alt="..." width="24px">
-                  &nbsp;
-                  +91 888
-                  666
-                  9505</button></a>
+              <div class="nav-btn">
+                <a href="tel:+918886669505"
+                  ><button>
+                    <img
+                      src="./home_imgs/843786_whatsapp_icon.png"
+                      alt="..."
+                      width="24px"
+                    />
+                    &nbsp; +91 888 666 9505
+                  </button></a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="hamburger1">
-          <a href="./index.html">
-            <img src="./home_imgs/Western construction White logo.png" alt="..." class="img-fluid" width="40%"
-              style="margin-top: 2%" /></a>
-          <div class="mobile_menu_icon1">
-            <img src="./menu.png" class="menu" />
-          </div>
-          <div class="topnav1">
-            <div style="padding-bottom: 5%">
-              <span class="close1" style="
+          <div class="hamburger1">
+            <a href="./">
+              <img
+                src="./home_imgs/Western construction White logo.png"
+                alt="..."
+                class="img-fluid"
+                width="40%"
+                style="margin-top: 2%"
+            /></a>
+            <div class="mobile_menu_icon1">
+              <img src="./menu.png" class="menu" />
+            </div>
+            <div class="topnav1">
+              <div style="padding-bottom: 5%">
+                <span
+                  class="close1"
+                  style="
                     font-size: 50px;
                     cursor: pointer;
                     color: white;
                     float: right;
                     margin-right: 5%;
-                  ">&times;
-              </span>
+                  "
+                  >&times;
+                </span>
+              </div>
+              <a href="./">
+                <img
+                  src="./home_imgs/Western construction White logo.png"
+                  alt="..."
+                  class="img-fluid"
+                  width="40%"
+                  style="margin-top: 2%"
+              /></a>
+              <a href="./"> <h3>Home</h3> </a
+              ><a href="./aboutus">
+                <h3>About us</h3>
+              </a>
+
+              <a href="./project">
+                <h3>Projects</h3>
+              </a>
+              <div class="project-links">
+                <a href="./western-tapovan">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+                    <h6>Western Tapovan</h6>
+                  </div>
+                </a>
+                <a href="./western-windsor-res-B">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Windsor - B</h6>
+                  </div>
+                </a>
+                <a href="./western-windsor-res">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Windsor - C</h6>
+                  </div>
+                </a>
+                <a href="./westernexortica">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Exotica</h6>
+                  </div>
+                </a>
+                <a href="./westernbliss">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6 class="page-active">Western Bliss</h6>
+                  </div>
+                </a>
+
+                <a href="./westernplaza">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+                    <h6>Western Plaza</h6>
+                  </div>
+                </a>
+                <a href="./western-windsor-com">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Windsor - A</h6>
+                  </div>
+                </a>
+
+                <a href="./westerndallas">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+                    <h6>Western Dallas Center</h6>
+                  </div>
+                </a>
+                <a href="./westernaqua">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Aqua</h6>
+                  </div>
+                </a>
+                <a href="./westernpearl">
+                  <div class="d-flex">
+                    <img
+                      src="./home_imgs/short-line.png"
+                      alt=""
+                      class="tp-line"
+                      width="3%"
+                      height="0.5%"
+                    />
+
+                    <h6>Western Pearl</h6>
+                  </div>
+                </a>
+              </div>
+              <a href="./careers">
+                <h3>Careers</h3>
+              </a>
+              <a href="./contact">
+                <h3>Contact us</h3>
+              </a>
+              <div class="nav-btn1">
+                <a href="tel:+918886669505"
+                  ><button>
+                    <span class="nospan">+91 888 666 9505</span>
+                  </button></a
+                >
+              </div>
             </div>
-            <a href="./index.html">
-              <img src="./home_imgs/Western construction White logo.png" alt="..." class="img-fluid" width="40%"
-                style="margin-top: 2%" /></a>
-            <a href="./index.html">
-              <h3>Home</h3>
-            </a><a href="./aboutus.html">
-              <h3>About us</h3>
-            </a>
-
-            <a href="./project.html">
-              <h3>Projects</h3>
-            </a>
-            <div class="project-links">
-              <a href="./western-tapovan.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-                  <h6>Western Tapovan</h6>
-                </div>
-              </a>
-              <a href="./western-windsor-res-B.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Windsor - B</h6>
-                </div>
-              </a>
-              <a href="./western-windsor-res.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Windsor - C</h6>
-                </div>
-              </a>
-              <a href="./westernexortica.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Exotica</h6>
-                </div>
-              </a>
-              <a href="./westernbliss.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6 class="page-active">Western Bliss</h6>
-                </div>
-              </a>
-
-              <a href="./westernplaza.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-                  <h6>Western Plaza</h6>
-                </div>
-              </a>
-              <a href="./western-windsor-com.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Windsor - A</h6>
-                </div>
-              </a>
-
-
-              <a href="./westerndallas.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-                  <h6>Western Dallas Center</h6>
-                </div>
-              </a>
-              <a href="./westernaqua.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Aqua</h6>
-                </div>
-              </a>
-              <a href="./westernpearl.html">
-                <div class="d-flex">
-                  <img src="./home_imgs/short-line.png" alt="" class="tp-line" width="3%" height="0.5%" />
-
-                  <h6>Western Pearl</h6>
-                </div>
-              </a>
+          </div>
+          <div class="banner-content">
+            <div class="small-heading-white">
+              <p data-aos="fade-up">PREMIUM VILLA PLOTS</p>
             </div>
-            <a href="./careers.html">
-              <h3>Careers</h3>
-            </a>
-            <a href="./contact.html">
-              <h3>Contact us</h3>
-            </a>
-            <div class="nav-btn1">
-              <a href="tel:+918886669505"><button><span class="nospan">+91 888 666 9505</span></button></a>
+            <h2 data-aos="fade-up">WESTERN BLISS</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- plaza-banner-end -->
+    <!-- section-1 -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="plaza-sec-div">
+          <h2 data-aos="fade-up">About Western Bliss</h2>
+          <div class="plaza-para">
+            <p data-aos="fade-up">
+              Western Bliss is a well-planned project that is ideally positioned
+              in Sainikpuri, Hyderabad. It is spread out over a large area of
+              <span class="nospan">38</span> Acre. This project encompasses over
+              <span class="nospan">372</span> units. <br />
+              The units of this property are Ready To Move. Western Bliss is
+              smartly developed by the well-known builder Western Constrcutions.
+              The pin code of this project is
+              <span class="nospan">500094</span> . Western Bliss offers a
+              contemporary lifestyle to its residents and is the perfect place
+              to own your dream home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sticky">
+      <div class="navbar ab-plaza" data-aos="fade-up">
+        <div class="ab-plaza-content navbar-nav">
+          <button data-aos="fade-up" class="nav-item">
+            <a href="#bliss-Amenties" class="nav-link">Amenities </a>
+          </button>
+          <button data-aos="fade-up" class="nav-item">
+            <a class="nav-link" href="#Layoutplan">Layout plan</a>
+          </button>
+          <button data-aos="fade-up" class="nav-item">
+            <a class="nav-link" href="#Gallery">Gallery</a>
+          </button>
+
+          <button data-aos="fade-up" class="nav-item">
+            <a class="nav-link" href="#WalkThrough">Walk Through</a>
+          </button>
+          <button data-aos="fade-up" class="nav-item">
+            <a class="nav-link" href="#Location">Location</a>
+          </button>
+          <button data-aos="fade-up" class="nav-item">
+            <a class="nav-link" href="#Brochure">Brochure</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- section-1-end -->
+    <!-- amenities-sec -->
+    <section id="bliss-Amenties">
+      <div class="ex-amenities">
+        <div class="row mr-0">
+          <div class="col-lg-12">
+            <div class="ab-sec-content">
+              <ul>
+                <li class="ab-li" data-aos="fade-up">
+                  <img src="./home_imgs/Line 700.png" alt="..." />
+                  Amenities
+                </li>
+              </ul>
+              <div class="ab-para-width">
+                <p class="ab-sec-para pb-5" data-aos="fade-up">
+                  Western bliss a premium Open Plots Community, offers amenities
+                  such as a swimming pool , Amphitheatre, and many more. These
+                  are things you can easily get access to within the western
+                  bliss. These are some of the essential factors that enrich in
+                  living a peaceful and happier life.
+                </p>
+              </div>
+            </div>
+            <div class="ab-list">
+              <div class="ab-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="ab-li-content">
+                        <h5 data-aos="fade-up">ELECTRICAL AND COMMUNICATION</h5>
+                        <ul>
+                          <li data-aos="fade-up">
+                            Underground electric cabling though trays in
+                            specialized trench work
+                          </li>
+                          <li data-aos="fade-up">
+                            Heavy duty Earthing and protection systems
+                          </li>
+                          <li data-aos="fade-up">Designer street lighting</li>
+                          <li data-aos="fade-up">Amphitheater</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                      <div class="ab-li-content">
+                        <h5 data-aos="fade-up">ROADS</h5>
+                        <ul>
+                          <li data-aos="fade-up">
+                            World class designed blacktop roads
+                          </li>
+                          <li data-aos="fade-up">
+                            Precision laid curbstones and footpaths
+                          </li>
+                          <li data-aos="fade-up">Avenue plantation</li>
+                          <li data-aos="fade-up">Ample visitor parking area</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ab-list">
+              <div class="ab-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="ab-li-content">
+                        <h5 data-aos="fade-up">SECURITY</h5>
+                        <ul>
+                          <li data-aos="fade-up">
+                            Solar fencing around the compound wall
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="banner-content">
-          <div class="small-heading-white">
-            <p data-aos="fade-up">PREMIUM VILLA PLOTS</p>
+      </div>
+    </section>
+    <!-- amenities-sec-end -->
+    <!-- floor-plan -->
+    <section id="Layoutplan">
+      <div class="container">
+        <div class="floor-plan-div">
+          <div class="floor-heading plaza-sec-div">
+            <h2 data-aos="fade-up">Layout Plan</h2>
           </div>
-          <h2 data-aos="fade-up">WESTERN BLISS</h2>
-
+          <div class="floor-plan-img wow animated">
+            <a href="./western_bliss/floorplan.jpg" data-fancybox="gallery">
+              <img
+                src="./western_bliss/floorplan.jpg"
+                alt="..."
+                class="img-fluid lay"
+                data-aos="fade-up"
+              />
+            </a>
+          </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- plaza-banner-end -->
-  <!-- section-1 -->
-  <section class="contact-form-section">
-    <div class="container">
-      <div class="plaza-sec-div">
-        <h2 data-aos="fade-up">About Western Bliss</h2>
-        <div class="plaza-para">
-          <p data-aos="fade-up">
-            Western Bliss is a well-planned project that is ideally positioned in Sainikpuri, Hyderabad. It is spread
-            out over a large area of <span class="nospan">38</span> Acre. This project encompasses over <span
-              class="nospan">372</span> units. <br>
-            The units of this property are Ready To Move. Western Bliss is smartly developed by the well-known builder
-            Western Constrcutions. The pin code of this project is <span class="nospan">500094</span> . Western Bliss
-            offers a contemporary lifestyle
-            to its residents and is the perfect place to own your dream home.
-
-          </p>
+        <div class="click mt-5">
+          <p>* Click on the image to view/zoom</p>
         </div>
-
       </div>
-    </div>
-  </section>
-  <div class=" sticky">
-    <div class="navbar  ab-plaza" data-aos="fade-up">
-      <div class="ab-plaza-content  navbar-nav">
-        <button data-aos="fade-up" class="nav-item"> <a href="#bliss-Amenties" class="nav-link">Amenities
-          </a></button>
-        <button data-aos="fade-up" class="nav-item"><a class="nav-link" href="#Layoutplan">Layout
-            plan</a></button>
-        <button data-aos="fade-up" class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></button>
-
-        <button data-aos="fade-up" class="nav-item"><a class="nav-link" href="#WalkThrough">Walk
-            Through</a></button>
-        <button data-aos="fade-up" class="nav-item"><a class="nav-link" href="#Location">Location</a></button>
-        <button data-aos="fade-up" class="nav-item"><a class="nav-link" href="#Brochure">Brochure</a></button>
+    </section>
+    <!-- floor-plan-end -->
+    <!-- gallery -->
+    <section id="Gallery">
+      <div class="container">
+        <div class="floor-heading plaza-sec-div">
+          <h2 data-aos="fade-up">Gallery</h2>
+        </div>
+        <div class="row pb-5 row-img">
+          <div class="col-lg-6">
+            <a href="./western_bliss/Mask Group 30.png" data-fancybox="gallery">
+              <img
+                src="./western_bliss/Mask Group 30.png"
+                alt=" ..."
+                class="img-fluid"
+                data-aos="fade-up"
+            /></a>
+          </div>
+          <div class="col-lg-6 tab-mb">
+            <a href="./western_bliss/Mask Group 32.png" data-fancybox="gallery">
+              <img
+                src="./western_bliss/Mask Group 32.png"
+                alt="..."
+                class="img-fluid"
+                data-aos="fade-up"
+            /></a>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <a href="./western_bliss/Mask Group 33.png" data-fancybox="gallery">
+              <img
+                src="./western_bliss/Mask Group 33.png"
+                alt="..."
+                class="img-fluid"
+                data-aos="fade-up"
+            /></a>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <a href="./western_bliss/Mask Group 34.png" data-fancybox="gallery">
+              <img
+                src="./western_bliss/Mask Group 34.png"
+                alt="..."
+                class="img-fluid"
+                data-aos="fade-up"
+            /></a>
+          </div>
+          <div class="col-lg-12 mt-5">
+            <a href="./western_bliss/Mask Group 31.png" data-fancybox="gallery">
+              <img
+                src="./western_bliss/Mask Group 31.png"
+                alt="..."
+                class="img-fluid"
+                data-aos="fade-up"
+            /></a>
+          </div>
+        </div>
+        <div class="click">
+          <p>* Click on the image to view/zoom</p>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- section-1-end -->
-  <!-- amenities-sec -->
-  <section id="bliss-Amenties">
-    <div class="ex-amenities">
+    </section>
+    <!-- gallery-end -->
+    <!-- 3d-walkthrough -->
+    <section class="walkthrough" id="WalkThrough">
       <div class="row mr-0">
         <div class="col-lg-12">
           <div class="ab-sec-content">
             <ul>
               <li class="ab-li" data-aos="fade-up">
-                <img src="./home_imgs/Line 700.png" alt="..." />
-                Amenities
+                <img src="./home_imgs/Line 700.png" alt="..." />Walk Through
               </li>
             </ul>
             <div class="ab-para-width">
-              <p class="ab-sec-para pb-5" data-aos="fade-up">
-                Western bliss a premium Open Plots Community, offers amenities
-                such as a swimming pool , Amphitheatre, and many more. These
-                are things you can easily get access to within the western
-                bliss. These are some of the essential factors that enrich in
-                living a peaceful and happier life.
+              <p class="ab-sec-para" data-aos="fade-up">
+                Western bliss has an exquisite aerial view that can be seen in
+                the walk-through video showing the major amenities of the
+                venture in <span class="nospan">360</span> degree view.
               </p>
             </div>
-          </div>
-          <div class="ab-list">
-            <div class="ab-padding">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="ab-li-content">
-                      <h5 data-aos="fade-up">ELECTRICAL AND COMMUNICATION</h5>
-                      <ul>
-                        <li data-aos="fade-up">
-                          Underground electric cabling though trays in
-                          specialized trench work
-                        </li>
-                        <li data-aos="fade-up">
-                          Heavy duty Earthing and protection systems
-                        </li>
-                        <li data-aos="fade-up">Designer street lighting</li>
-                        <li data-aos="fade-up">Amphitheater</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-1"></div>
-                  <div class="col-lg-3">
-                    <div class="ab-li-content">
-                      <h5 data-aos="fade-up">ROADS</h5>
-                      <ul>
-                        <li data-aos="fade-up">
-                          World class designed blacktop roads
-                        </li>
-                        <li data-aos="fade-up">
-                          Precision laid curbstones and footpaths
-                        </li>
-                        <li data-aos="fade-up">Avenue plantation</li>
-                        <li data-aos="fade-up">Ample visitor parking area</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="wa-video">
+              <iframe
+                width="80%"
+                height="500"
+                src="https://www.youtube.com/embed/7wDc2HXvqQo?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="border-radius: 25px"
+              ></iframe>
             </div>
           </div>
-          <div class="ab-list">
-            <div class="ab-padding">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <div class="ab-li-content">
-                      <h5 data-aos="fade-up">SECURITY</h5>
-                      <ul>
-                        <li data-aos="fade-up">
-                          Solar fencing around the compound wall
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3d-walkthrough-end -->
+    <!-- location -->
+    <section id="Location">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="p-spec-content">
+              <div class="sec-heading">
+                <h3 data-aos="fade-up">Location</h3>
+              </div>
+              <div class="sec-para">
+                <p data-aos="fade-up">
+                  Western bliss is located at a premium location that has a
+                  greater approachability to the city and other nearest
+                  destinations.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- amenities-sec-end -->
-  <!-- floor-plan -->
-  <section id="Layoutplan">
-    <div class="container">
-      <div class="floor-plan-div">
-        <div class="floor-heading plaza-sec-div">
-          <h2 data-aos="fade-up">Layout Plan</h2>
-        </div>
-        <div class="floor-plan-img wow animated">
-          <a href="./western_bliss/floorplan.jpg" data-fancybox="gallery">
-            <img src="./western_bliss/floorplan.jpg" alt="..." class="img-fluid lay" data-aos="fade-up" />
-          </a>
+        <div class="plaza-map">
+          <div class="container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.099434690425!2d78.5575372144115!3d17.502766188009552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b5dfa84f5f3%3A0x25b0fbe2d77ece0c!2sWestern%20Bliss!5e0!3m2!1sen!2sin!4v1655095910965!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="eager"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-aos="fade-up"
+            ></iframe>
+          </div>
         </div>
       </div>
-      <div class="click mt-5">
-        <p>* Click on the image to view/zoom</p>
-      </div>
-    </div>
-  </section>
-  <!-- floor-plan-end -->
-  <!-- gallery -->
-  <section id="Gallery">
-    <div class="container">
-      <div class="floor-heading plaza-sec-div">
-        <h2 data-aos="fade-up">Gallery</h2>
-      </div>
-      <div class="row pb-5 row-img">
-        <div class="col-lg-6">
-          <a href="./western_bliss/Mask Group 30.png" data-fancybox="gallery">
-            <img src="./western_bliss/Mask Group 30.png" alt=" ..." class="img-fluid" data-aos="fade-up" /></a>
-        </div>
-        <div class="col-lg-6 tab-mb">
-          <a href="./western_bliss/Mask Group 32.png" data-fancybox="gallery">
-            <img src="./western_bliss/Mask Group 32.png" alt="..." class="img-fluid" data-aos="fade-up" /></a>
-        </div>
-        <div class="col-lg-6 mt-5">
-          <a href="./western_bliss/Mask Group 33.png" data-fancybox="gallery">
-            <img src="./western_bliss/Mask Group 33.png" alt="..." class="img-fluid" data-aos="fade-up" /></a>
-        </div>
-        <div class="col-lg-6 mt-5">
-          <a href="./western_bliss/Mask Group 34.png" data-fancybox="gallery">
-            <img src="./western_bliss/Mask Group 34.png" alt="..." class="img-fluid" data-aos="fade-up" /></a>
-        </div>
-        <div class="col-lg-12 mt-5">
-          <a href="./western_bliss/Mask Group 31.png" data-fancybox="gallery">
-            <img src="./western_bliss/Mask Group 31.png" alt="..." class="img-fluid" data-aos="fade-up" /></a>
-        </div>
+    </section>
+    <!-- location-end -->
+    <!-- brochure -->
+    <section id="Brochure">
+      <div class="container">
+        <div class="plaza-sec-div">
+          <h2 data-aos="fade-up">Download our Brochure</h2>
 
-      </div>
-      <div class="click">
-        <p>* Click on the image to view/zoom</p>
-      </div>
-    </div>
-  </section>
-  <!-- gallery-end -->
-  <!-- 3d-walkthrough -->
-  <section class="walkthrough" id="WalkThrough">
-    <div class="row mr-0">
-      <div class="col-lg-12">
-        <div class="ab-sec-content">
-          <ul>
-            <li class="ab-li" data-aos="fade-up">
-              <img src="./home_imgs/Line 700.png" alt="..." />Walk Through
-            </li>
-          </ul>
-          <div class="ab-para-width">
-            <p class="ab-sec-para" data-aos="fade-up">
-              Western bliss has an exquisite aerial view that can be seen in
-              the walk-through video showing the major amenities of the
-              venture in <span class="nospan">360</span> degree view.
-            </p>
-          </div>
-          <div class="wa-video">
-            <iframe width="80%" height="500" src="https://www.youtube.com/embed/7wDc2HXvqQo?rel=0"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen style="border-radius: 25px"></iframe>
+          <div class="b-btn">
+            <a href="./western_bliss/Bliss-brochure.pdf" download>
+              <button data-aos="fade-up">
+                <img
+                  src="./westernplaza_imgs/download-arrow.png"
+                  alt=""
+                  width="2%"
+                />
+                &nbsp; DOWNLOAD E BROCHURE <span>&nbsp; (PDF)</span>
+              </button></a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- 3d-walkthrough-end -->
-  <!-- location -->
-  <section id="Location">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="p-spec-content">
-            <div class="sec-heading">
-              <h3 data-aos="fade-up">Location</h3>
+    </section>
+    <!-- brochure-end -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="row mt-3">
+            <div class="col-lg-8">
+              <div class="footer-content">
+                <a href="./">
+                  <img
+                    data-aos="fade-up"
+                    src="./home_imgs/Western construction White logo.png"
+                    alt="..."
+                    width="194px"
+                  />
+                </a>
+                <div class="footer-follow">
+                  <div class="flex-div mt-5">
+                    <p data-aos="fade-up">Follow us</p>
+                    <a
+                      href="https://www.facebook.com/Western-Constructions-105393592250788"
+                      target="_blank"
+                      ><img
+                        src="./home_imgs/OUTLINE_copy_2.png"
+                        alt="..."
+                        data-aos="fade-up"
+                    /></a>
+                    <a href="https://twitter.com/Western_1989"
+                      ><img
+                        src="./home_imgs/twitter.png"
+                        alt="..."
+                        data-aos="fade-up"
+                    /></a>
+                    <a
+                      href="https://www.instagram.com/western.constructions/"
+                      target="_blank"
+                      ><img
+                        src="./home_imgs/insta.png"
+                        alt="..."
+                        data-aos="fade-up"
+                    /></a>
+                    <!--<a href="#"><img src="./home_imgs/black.png" alt="..." data-aos="fade-up" /></a>-->
+                  </div>
+                  <p class="fad pt-3" data-aos="fade-up">
+                    Designed & Developed By
+                    <a href="http://teamworks.in/"> Teamworks New Media </a>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="sec-para">
-              <p data-aos="fade-up">
-                Western bliss is located at a premium location that has a
-                greater approachability to the city and other nearest
-                destinations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="plaza-map">
-        <div class="container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.099434690425!2d78.5575372144115!3d17.502766188009552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b5dfa84f5f3%3A0x25b0fbe2d77ece0c!2sWestern%20Bliss!5e0!3m2!1sen!2sin!4v1655095910965!5m2!1sen!2sin"
-            width="100%" height="450" style="border: 0" allowfullscreen="" loading="eager"
-            referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- location-end -->
-  <!-- brochure -->
-  <section id="Brochure">
-    <div class="container">
-      <div class="plaza-sec-div">
-        <h2 data-aos="fade-up">Download our Brochure</h2>
-
-        <div class="b-btn">
-          <a href="./western_bliss/Bliss-brochure.pdf" download>
-            <button data-aos="fade-up">
-              <img src="./westernplaza_imgs/download-arrow.png" alt="" width="2%" />
-              &nbsp; DOWNLOAD E BROCHURE <span>&nbsp; (PDF)</span>
-            </button></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- brochure-end -->
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footer">
-        <div class="row mt-3">
-          <div class="col-lg-8">
-            <div class="footer-content">
-              <a href="./index.html"> <img data-aos="fade-up" src="./home_imgs/Western construction White logo.png"
-                  alt="..." width="194px">
-              </a>
-              <div class="footer-follow">
+            <div class="col-lg-4">
+              <div class="flex-div-1" data-aos="fade-up">
+                <img
+                  class="fad-img"
+                  src="./352521_location_on_icon.png"
+                  alt="..."
+                />
+                <p class="fad">
+                  8D, 8thFloor, Western Pearl, <br />
+                  Survey No.13(P), Hi-Tech City Main Road, <br />
+                  Kondapur, Hyderabad - 500 084, T.S. India.
+                </p>
+              </div>
+              <div class="flex-div-1" data-aos="fade-up">
+                <img
+                  class="fad-img"
+                  src="./2203552_email_inbox_letter_send_icon.png"
+                  alt="..."
+                />
+                <p class="fad">marketing@westernconstructions.com</p>
+              </div>
+              <div class="flex-div-1" data-aos="fade-up">
+                <img
+                  class="fad-img"
+                  src="./3669395_call_ic_icon.png"
+                  alt="..."
+                />
+                <p class="fad">
+                  +91 40 29702222 &nbsp; || &nbsp;+918886669503 / 05
+                </p>
+              </div>
+              <div class="footer-follow1">
                 <div class="flex-div mt-5">
-                  <p data-aos="fade-up">Follow us</p>
-                  <a href="https://www.facebook.com/Western-Constructions-105393592250788" target="_blank"><img
-                      src="./home_imgs/OUTLINE_copy_2.png" alt="..." data-aos="fade-up" /></a> <a
-                    href="https://twitter.com/Western_1989"><img src="./home_imgs/twitter.png" alt="..."
-                      data-aos="fade-up" /></a>
-                  <a href="https://www.instagram.com/western.constructions/" target="_blank"><img
-                      src="./home_imgs/insta.png" alt="..." data-aos="fade-up" /></a>
+                  <p data-aos="fade-up" class="text-white">Follow us</p>
+                  <a
+                    href="https://www.facebook.com/Western-Constructions-105393592250788"
+                    target="_blank"
+                    ><img
+                      src="./home_imgs/OUTLINE_copy_2.png"
+                      alt="..."
+                      data-aos="fade-up"
+                  /></a>
+                  <a href="https://twitter.com/Western_1989"
+                    ><img
+                      src="./home_imgs/twitter.png"
+                      alt="..."
+                      data-aos="fade-up"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/western.constructions/"
+                    target="_blank"
+                    ><img
+                      src="./home_imgs/insta.png"
+                      alt="..."
+                      data-aos="fade-up"
+                  /></a>
                   <!--<a href="#"><img src="./home_imgs/black.png" alt="..." data-aos="fade-up" /></a>-->
                 </div>
-                <p class="fad pt-3" data-aos="fade-up">Designed & Developed By <a href="http://teamworks.in/"> Teamworks
-                    New
-                    Media </a></p>
+                <p class="fad pt-3" data-aos="fade-up">
+                  Designed & Developed By
+                  <a href="http://teamworks.in/"> Teamworks New Media </a>
+                </p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="flex-div-1 " data-aos="fade-up">
-              <img class="fad-img" src="./352521_location_on_icon.png" alt="...">
-              <p class="fad">8D, 8thFloor, Western Pearl, <br> Survey No.13(P), Hi-Tech
-                City Main Road, <br>
-                Kondapur, Hyderabad - 500 084,
-                T.S. India.</p>
-            </div>
-            <div class="flex-div-1 " data-aos="fade-up">
-              <img class="fad-img" src="./2203552_email_inbox_letter_send_icon.png" alt="...">
-              <p class="fad">marketing@westernconstructions.com</p>
-            </div>
-            <div class="flex-div-1 " data-aos="fade-up">
-              <img class="fad-img" src="./3669395_call_ic_icon.png" alt="...">
-              <p class="fad">+91 40 29702222 &nbsp; || &nbsp;+918886669503 / 05</p>
-            </div>
-            <div class="footer-follow1">
-              <div class="flex-div mt-5">
-                <p data-aos="fade-up" class="text-white">Follow us</p>
-                <a href="https://www.facebook.com/Western-Constructions-105393592250788" target="_blank"><img
-                    src="./home_imgs/OUTLINE_copy_2.png" alt="..." data-aos="fade-up" /></a> <a
-                  href="https://twitter.com/Western_1989"><img src="./home_imgs/twitter.png" alt="..."
-                    data-aos="fade-up" /></a>
-                <a href="https://www.instagram.com/western.constructions/" target="_blank"><img
-                    src="./home_imgs/insta.png" alt="..." data-aos="fade-up" /></a>
-                <!--<a href="#"><img src="./home_imgs/black.png" alt="..." data-aos="fade-up" /></a>-->
-              </div>
-              <p class="fad pt-3" data-aos="fade-up">Designed & Developed By <a href="http://teamworks.in/"> Teamworks
-                  New
-                  Media </a></p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer-end -->
-  <!-- hamburger-script -->
-  <script>
-    // HAMBURGER1 MENU SCRIPT
-    let menuIcon1 = document.querySelector(".mobile_menu_icon1");
-    let closeIcon1 = document.querySelector(".close1");
-    let topnav1 = document.querySelector(".topnav1");
-    menuIcon1.addEventListener("click", () => {
-      topnav1.classList.add("active_topnav1");
-    });
-    closeIcon1.addEventListener("click", () => {
-      topnav1.classList.remove("active_topnav1");
-    });
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-  <!-- SCROLL ANIMATION SCRIPT -->
-</body>
-
+    </footer>
+    <!-- footer-end -->
+    <!-- hamburger-script -->
+    <script>
+      // HAMBURGER1 MENU SCRIPT
+      let menuIcon1 = document.querySelector(".mobile_menu_icon1");
+      let closeIcon1 = document.querySelector(".close1");
+      let topnav1 = document.querySelector(".topnav1");
+      menuIcon1.addEventListener("click", () => {
+        topnav1.classList.add("active_topnav1");
+      });
+      closeIcon1.addEventListener("click", () => {
+        topnav1.classList.remove("active_topnav1");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <!-- SCROLL ANIMATION SCRIPT -->
+  </body>
 </html>
