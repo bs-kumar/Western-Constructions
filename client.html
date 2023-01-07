@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>clients</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <style>
-        .clients {
-            color: white;
-            padding: 80px 0px;
-        }
+      .clients {
+        color: white;
+        padding: 80px 0px;
+      }
 
-        .sec1 {
-            display: flex;
-            align-items: center;
-            text-align: left !important;
-            color: white;
-            min-height: 85vh;
-            padding: 50px 0px;
-        }
+      .sec1 {
+        display: flex;
+        align-items: center;
+        text-align: left !important;
+        color: white;
+        min-height: 85vh;
+        padding: 50px 0px;
+      }
 
-        .ccontent {
-            padding: 100px 30px;
-            text-align: justify;
-        }
+      .ccontent {
+        padding: 100px 30px;
+        text-align: justify;
+      }
 
+      .case_study_img {
+        margin-top: -8rem;
+        margin-left: -12rem;
+        width: 150%;
+      }
+
+      .background {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        background: #05213a;
+        text-align: left !important;
+        color: white;
+        z-index: -1;
+        top: 0;
+      }
+
+      @media (max-width: 992px) {
         .case_study_img {
-            margin-top: -8rem;
-            margin-left: -12rem;
-            width: 150%;
-
+          max-width: 80% !important;
         }
-
-
-        .background {
-            position: absolute;
-            width: 60%;
-            height: 100%;
-            background: #05213A;
-            text-align: left !important;
-            color: white;
-            z-index: -1;
-            top: 0;
-        }
-
-
-
-        @media (max-width: 992px) {
-            .case_study_img {
-                max-width: 80% !important;
-            }
-        }
+      }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181970454-7"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-181970454-7"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-181970454-7');
+      gtag("config", "UA-181970454-7");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- magic-card -->
     <section class="clients">
-        <h4 class="text-center">Kitchen Order Display Interface</h4>
-        <section class="container mt-5">
-            <div class="position-relative pb-md-0 pb-5">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
-                        <!--background-->
-                        <div class="ccontent">
-                            <h4>Lorem</h4>
-                            <p class="small">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga totam ad quaerat
-                                inventore consequuntur dolor repudiandae deleniti fugiat. Sit corrupti quam architecto
-                                delectus repellendus! Officiis esse voluptatum perspiciatis dolorum?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
-                        <img src="./home_imgs/op1.png" alt="gozars's image" class="img-fluid case_study_img" />
-                    </div>
-                </div>
-                <div class="background"></div>
+      <h4 class="text-center">Kitchen Order Display Interface</h4>
+      <section class="container mt-5">
+        <div class="position-relative pb-md-0 pb-5">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+              <!--background-->
+              <div class="ccontent">
+                <h4>Lorem</h4>
+                <p class="small">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  fuga totam ad quaerat inventore consequuntur dolor repudiandae
+                  deleniti fugiat. Sit corrupti quam architecto delectus
+                  repellendus! Officiis esse voluptatum perspiciatis dolorum?
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+              <img
+                src="./home_imgs/op1.png"
+                alt="gozars's image"
+                class="img-fluid case_study_img"
+              />
+            </div>
+          </div>
+          <div class="background"></div>
+        </div>
+      </section>
     </section>
     <!-- magic-card-end -->
-</body>
-
+    <!-- New Chat code -->
+    <script
+      src="https://cwc.livserv.in/chat.js?lid=13357"
+      id="lp_cwc_xqzyihjdskw"
+    ></script>
+    <script src="https://cw1.livserv.in?did=13357&amp;pid=1"></script>
+    <!-- New Chat Code End -->
+  </body>
 </html>
